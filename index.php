@@ -15,12 +15,12 @@ if ($db->connect_errno) {
 
 $sql = "SELECT * FROM akaun where jenis = 1";
 $resultdebit = mysqli_query($db,$sql);
-$resultdebit2 = mysqli_query($db,$sql);
+$resultdebit2 = $resultdebit;
 $num1 = mysqli_num_rows($resultdebit);
 
 $sql = "SELECT * FROM akaun where jenis = 2";
 $resultkredit = mysqli_query($db,$sql);
-$resultkredit2 = mysqli_query($db,$sql);
+$resultkredit2 = $resultkredit;
 $num2 = mysqli_num_rows($resultkredit);
 ?>
 <!doctype html>
